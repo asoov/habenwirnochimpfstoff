@@ -67,7 +67,7 @@ async function hasSuitableDate(data, xhrLink, secondShotXhrLink) {
       }
     }
 
-    if (data?.next_slot?.startsWith("2021-05")) {
+    if (data?.next_slot?.startsWith("2021-05") || data?.next_slot?.startsWith("2021-06")) {
       const newData = (
         await axios.get(xhrLink.replace(/\d{4}-\d{2}-\d{2}/, data.next_slot))
       ).data;
