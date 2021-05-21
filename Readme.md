@@ -11,7 +11,7 @@ Open Terminal and change directory to this repository folder.
 Type in following commands
 ```
 npm install
-npm start
+npm run start
 ```
 The program will check the following Doctolib places for appointments:
 https://www.doctolib.de/praxis/muenchen/hausarztpraxis-muenchen
