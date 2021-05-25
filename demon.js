@@ -235,6 +235,24 @@ const data = [
     xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-21&visit_motive_ids=2864009&agenda_ids=454126&insurance_sector=public&practice_ids=116543&limit=3`,
     bookingLink: `https://www.doctolib.de/praxis/muenchen/hausarztpraxis-dr-grassl`,
   },
+  {
+    xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-23&visit_motive_ids=2820334&agenda_ids=466608&insurance_sector=public&practice_ids=25230&limit=3`,
+    bookingLink: `https://www.doctolib.de/gemeinschaftspraxis/muenchen/fuchs-hierl`,
+  },
+  {
+    xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-23&visit_motive_ids=2733399&agenda_ids=163014&insurance_sector=private&practice_ids=63458&destroy_temporary=true&limit=3`,
+    bookingLink: `https://www.doctolib.de/praxis/ebersberg/gynaekologische-gemeinschaftspraxis-dr-nave-dr-steinbacher/booking/motives?insuranceEventsEnabled=true&insuranceSector=public&isNewPatient=true&isNewPatientBlocked=false&pid=practice-63458&placeId=practice-63458&specialityId=1314&telehealth=false`,
+  },
+  {
+    xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-24&visit_motive_ids=2772849&agenda_ids=456924&insurance_sector=public&practice_ids=16818&destroy_temporary=true&limit=3`,
+    bookingLink: `https://www.doctolib.de/praxis/muenchen/hausaerzte-in-giesing?pid=practice-16818`,
+  },
+  {
+    xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-24&visit_motive_ids=2784556&agenda_ids=476275&insurance_sector=public&practice_ids=139714&destroy_temporary=true&limit=3`,
+    bookingLink: `https://www.doctolib.de/praxis/muenchen/praxis-fuer-allgemein-medizin-dr-goldbrunner-dr-tissen?pid=practice-139714`,
+  },
+  
+
   // {
   //   xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-18&visit_motive_ids=2836657&agenda_ids=469719&insurance_sector=public&practice_ids=162056&limit=4`,
   //   bookingLink: `https://www.doctolib.de/krankenhaus/berlin/gkh-havelhoehe-impfzentrum`,
