@@ -67,7 +67,7 @@ async function hasSuitableDate(data, xhrLink, secondShotXhrLink) {
       }
     }
 
-    if (data?.next_slot?.startsWith("2021-05") || data?.next_slot?.startsWith("2021-06")) {
+    if (data?.next_slot?.startsWith("2021-06") || data?.next_slot?.startsWith("2021-07") || data?.next_slot?.startsWith("2021-08")) {
       const newData = (
         await axios.get(xhrLink.replace(/\d{4}-\d{2}-\d{2}/, data.next_slot))
       ).data;
@@ -81,7 +81,6 @@ async function hasSuitableDate(data, xhrLink, secondShotXhrLink) {
         }
       }
     }
-
     if (data?.availabilities?.length) {
       for (availability of data.availabilities) {
         if (availability.slots.length > 0) {
@@ -223,6 +222,10 @@ const data = [
     xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-21&visit_motive_ids=2748084&agenda_ids=450406&insurance_sector=public&practice_ids=106858&destroy_temporary=true&limit=3`,
     bookingLink: `https://www.doctolib.de/praxis/muenchen/hausarztpraxis-muenchen`,
   },
+  // {
+  //   xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-08-11&visit_motive_ids=2767063&agenda_ids=450406&insurance_sector=public&practice_ids=106858&destroy_temporary=true&limit=3`,
+  //   bookingLink: `https://www.doctolib.de/praxis/muenchen/hausarztpraxis-muenchen`,
+  // },
   {
     xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-21&visit_motive_ids=2719907&agenda_ids=217515&insurance_sector=public&practice_ids=86787&limit=3`,
     bookingLink: `https://www.doctolib.de/praxis/muenchen/dr-med-weier-praxis-am-goetheplatz`,
@@ -251,7 +254,6 @@ const data = [
     xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-24&visit_motive_ids=2784556&agenda_ids=476275&insurance_sector=public&practice_ids=139714&destroy_temporary=true&limit=3`,
     bookingLink: `https://www.doctolib.de/praxis/muenchen/praxis-fuer-allgemein-medizin-dr-goldbrunner-dr-tissen?pid=practice-139714`,
   },
-  
 
   // {
   //   xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-05-18&visit_motive_ids=2836657&agenda_ids=469719&insurance_sector=public&practice_ids=162056&limit=4`,
